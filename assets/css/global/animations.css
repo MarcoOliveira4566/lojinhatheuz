@@ -1,0 +1,46 @@
+/* Animações */
+@keyframes rodando {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rodandoDiv {
+  0% {
+    opacity: 100%;
+    top: -10px;
+    left: -250%;
+  }
+  50% {
+    opacity: 0%;
+    top: -10px;
+    left: 0%;
+  }
+  100% {
+    opacity: 0%;
+    top: -10px;
+    left: -300px;
+  }
+}
+@keyframes imgsanimation {
+  0% {
+
+  }
+  50% {
+    transform: scale(1.02)
+  }
+  100% {
+
+  }
+}
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,198 @@
+/* <section class="apresentacao"/> */
+section.apresentacao {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../../../../files/images/background.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+/* Imagens */
+section.apresentacao .imagens {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+  animation: imgsanimation 7s linear infinite;
+}
+section.apresentacao .imagens img.gilga1 {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  bottom: 0px;
+  left: 1025px;
+  z-index: 3;
+}
+
+section.apresentacao .imagens img.gilga2 {
+  width: 150%;
+  max-width: 126%;
+  position: relative;
+  bottom: 0px;
+  right: -250px;
+  z-index: 4;
+}
+
+/* Circulo */
+section.apresentacao .circulo {
+  position: absolute;
+  width: 100%;
+  max-width: 1500px;
+  bottom: -450px;
+  right: -380px;
+  animation: rodando 5s linear infinite;
+  z-index: 1;
+}
+/* Texto */
+section.apresentacao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  margin: 0 0 80px 125px;
+  z-index: 2;
+}
+section.apresentacao .texto h1 {
+  font-family: var(--bold);
+  font-size: 50px;
+  color: var(--cor-preto);
+  margin: 0px 0 10.2px 0;
+  width: 150%;
+  max-width: 463px;
+  line-height: 1.5;
+}
+section.apresentacao .texto h1 span {
+  color: var(--cor-primaria)
+}
+section.apresentacao .texto p {
+  font-family: var(--regular);
+  font-size: 16px;
+  color: var(--cor-preto);
+  line-height: 1.5;
+  margin: 0px 0 25px 0;
+  width: 118%;
+  max-width: 495px;
+  line-height: 1.5;
+}
+section.apresentacao .texto p span{
+  color: var(--cor-primaria);
+  -webkit-text-stroke: 0.1px var(--cor-primaria)
+}
+section.apresentacao .texto button {
+  font-family: var(--bold);
+  font-size: 20px;
+  color: var(--cor-preto);
+  background-color: var(--cor-secundaria-2);
+  border: 2.5px solid var(--cor-secundaria-1);
+  box-shadow: 0 10px 30px 0 var(--cor-primaria);
+  padding: 10.2px 20px;
+  border-radius: 24px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+section.apresentacao .texto button h3 {
+  position: relative;
+  padding: 5px 15px;
+  border-radius: 10px;
+  z-index: 2;
+  transition: all 0.3s;
+}
+section.apresentacao .texto button:hover {
+  transform: scale(1.05);
+  color: var(--cor-branco);
+  background-color: var(--cor-branco);
+  box-shadow: 0 10px 20px 0 var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    flex-direction: column;
+    padding: 170px 30px 0px 30px;
+  }
+  /* Imagens */
+section.apresentacao .imagens {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 1;
+  animation: imgsanimation 7s linear infinite;
+}
+section.apresentacao .imagens img.gilga1 {
+  width: 100%;
+  max-width: 850px;
+  position: relative;
+  bottom: 80px;
+  left: 520px;
+  z-index: 3;
+}
+
+section.apresentacao .imagens img.gilga2 {
+  width: 150%;
+  max-width: 150%;
+  position: relative;
+  bottom: 0px;
+  right: -150px;
+  z-index: 4;
+}
+
+  /* Circulo */
+  section.apresentacao .circulo {
+    width: 800px;
+    height: 800px;
+    top: auto;
+    bottom: -304px;
+    right: -300px;
+  }
+  /* Texto */
+  section.apresentacao .texto {
+    width: 100%;
+    margin: -45px 0px 100px -19px;
+    max-width: 247px;
+  }
+  section.apresentacao .texto h1 {
+    font-size: 40px;
+  }
+  section.apresentacao .texto p span {
+    -webkit-text-stroke: 0.8px #ff0000;
+  }
+  section.apresentacao .texto p{
+    max-width: 371px;
+    font-size: 15px;
+  }
+  section.apresentacao .texto button {
+    font-family: var(--bold);
+    font-size: 15px;
+    color: var(--cor-preto);
+    background-color: var(--cor-secundaria-2);
+    border: 2.5px solid var(--cor-secundaria-1);
+    box-shadow: 0 10px 30px 0 var(--cor-primaria);
+    padding: 10.2px 10px;
+    border-radius: 24px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  section.apresentacao .texto button h3 {
+    position: relative;
+    padding: 5px 15px;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.3s;
+  }
+  section.apresentacao .texto button:hover {
+    transform: scale(1.05);
+    color: var(--cor-branco);
+    background-color: var(--cor-branco);
+    box-shadow: 0 10px 20px 0 var(--cor-primaria);
+    color: var(--cor-primaria);
+  }
+}
